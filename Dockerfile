@@ -15,6 +15,7 @@ FROM base
 ENV NODE_ENV=production
 COPY index.mjs package.json ./
 RUN npm install --omit=dev
-COPY schemas schemas
+COPY src src
 USER node
+VOLUME [ "/data" ]
 CMD ["index.mjs" ]

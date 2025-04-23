@@ -1,0 +1,17 @@
+{
+  "category": "utility",
+  "demo": false,
+  "features": [
+    "Create a recurring alarm",
+    "Check alarm states",
+    "Delete an alarm"
+  ],
+  "icon": "https://talkops.app/images/extensions/alarm.png",
+  "name": "Alarm",
+  "sdk": {
+    "name": "nodejs",
+    "version": "2.13.2"
+  },
+  "softwareVersion": null,
+  "website": null
+}
