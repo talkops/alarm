@@ -10,6 +10,7 @@ const extension = new Extension()
   .setCategory('utility')
   .setIcon('https://talkops.app/images/extensions/alarm.png')
   .setFeatures(['Create a recurring alarm', 'Check alarm states', 'Delete an alarm'])
+  .start()
 
 const instructions = []
 instructions.push(`
