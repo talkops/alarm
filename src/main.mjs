@@ -134,6 +134,7 @@ function scheduleAlarm(alarm) {
   const job = new CronJob(
     alarm.cron,
     () => {
+      if (!extension.isEnabled()) return
       extension.enableAlarm()
       extension.sendMessage(`Alarm "${alarm.name}" #${alarm.number} is ringing!`)
     },
